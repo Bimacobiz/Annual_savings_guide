@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Savings Tracker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Savings Guide</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Welcome to the Dollar Saving Program!</h1>
-    <form action="savings.cgi" method="post">
-        <label for="choice">How would you like to save?</label>
-        <select name="choice" id="choice">
-            <option value="1">Increment by 1 dollar every day</option>
-            <option value="2">Custom savings</option>
-        </select>
-        <input type="submit" value="Start Saving">
-    </form>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Annual Savings Guide</h1>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <!-- Hero Image/Video goes here -->
+            <h2>Welcome to Annual Savings Guide</h2>
+            <p>Empowering Your Financial Future, One Save at a Time</p>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <!-- Feature icons and descriptions -->
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2>Why Choose Annual Savings Guide?</h2>
+            <div class="reasons">
+                <!-- Reasons to choose -->
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <h2>Get Started Today</h2>
+            <a href="#signup" class="btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>
+
