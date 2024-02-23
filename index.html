@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annual Savings Guide</title>
+    <title>Financial Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <h1>Annual Savings Guide</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#why-choose">Why Choose Us</a></li>
-                    <li><a href="#get-started">Get Started</a></li>
-                    <li><a href="#signin">Sign In</a></li> <!-- Added Sign In link -->
-                </ul>
-            </nav>
-        </div>
+        <h1>Financial Management System</h1>
     </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#track">Track Expense</a></li>
+            <li><a href="#budget">Set Budget Limit</a></li>
+            <li><a href="#savings">Set Savings Goal</a></li>
+            <li><a href="#analyze">Analyze Expenses</a></li>
+            <li><a href="#settings">User Settings</a></li>
+        </ul>
+    </nav>
 
-    <div class="main-content">
-        <div class="sidebar">
-            <form action="#" method="post" class="sidebar-form">
-                <h2>Plan Your Savings</h2>
-                <input type="text" placeholder="Enter your savings goal">
-                <input type="text" placeholder="Enter your target amount">
-                <input type="text" placeholder="Enter your deadline">
-                <button type="submit">Plan</button>
+    <main>
+        <section id="track">
+            <h2>Track Expense</h2>
+            <form id="trackForm">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+                <button type="submit">Track Expense</button>
             </form>
-        </div>
+        </section>
 
-        <div class="content">
-            <div class="container">
-                <section id="features" class="features">
-                    <h2>Features</h2>
-                    <p>Easily track your expenses, set budgets, create savings goals, and analyze your spending habits.</p>
-                </section>
+        <section id="budget">
+            <h2>Set Budget Limit</h2>
+            <form id="budgetForm">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+                <label for="limit">Limit:</label>
+                <input type="number" id="limit" name="limit" required>
+                <button type="submit">Set Budget Limit</button>
+            </form>
+        </section>
 
-                <section id="why-choose" class="why-choose">
-                    <h2>Why Choose Annual Savings Guide?</h2>
-                    <p>Comprehensive financial management, user-friendly interface, empowering financial decisions.</p>
-                </section>
+        <section id="savings">
+            <h2>Set Savings Goal</h2>
+            <form id="savingsForm">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required>
+                <button type="submit">Set Savings Goal</button>
+            </form>
+        </section>
 
-                <section id="get-started" class="get-started">
-                    <h2>Get Started Today</h2>
-                    <a href="#signup" class="btn">Sign Up Now</a>
-                </section>
-            </div>
-        </div>
-    </div>
+        <section id="analyze">
+            <h2>Analyze Expenses</h2>
+            <p id="analysisResults">Expense analysis results will appear here.</p>
+        </section>
+
+        <section id="settings">
+            <h2>User Settings</h2>
+            <form id="settingsForm">
+                <label for="notifications">Notification Preferences:</label>
+                <select id="notifications" name="notifications" required>
+                    <option value="1">Enabled</option>
+                    <option value="0">Disabled</option>
+                </select>
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="language" required>
+                <label for="theme">Theme:</label>
+                <input type="text" id="theme" name="theme" required>
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 Financial Management System</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
